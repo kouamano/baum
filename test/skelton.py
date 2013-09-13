@@ -11,8 +11,7 @@ def getchild(root, level):
 	print ":"*level + "<" + root.tagName + ">"
 	for node in root.childNodes:
 		if node.nodeType == node.ELEMENT_NODE:
-			i = level + 1
-			getchild(node, i)
+			getchild(node, level + 1)
 
 
 
